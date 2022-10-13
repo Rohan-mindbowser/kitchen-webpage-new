@@ -1,0 +1,141 @@
+.main_container {
+  padding: 0rem 1rem;
+}
+.logo img {
+  width: 160px;
+  height: 150px;
+}
+.kitchen_content {
+  margin: auto;
+  width: 60%;
+  height: 80vh;
+  /* background-color: black; */
+  border-radius: 10px;
+}
+.banner_and_profile {
+  width: 100%;
+  position: relative;
+}
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.profile_picture img {
+  width: 160px;
+  height: 150px;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  top: 140px;
+  left: 20px;
+}
+.kitchen_description {
+  margin-top: 60px;
+}
+.kitchen_name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.kitchen_location {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.kitchen_desc {
+  font-size: 1.3rem;
+}
+.dish_container {
+  margin-top: 60px;
+}
+.dish_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dish_image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1208px) {
+  .dish_image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1034px) {
+  .kitchen_content {
+    width: 100%;
+  }
+  .dish_image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 931px) {
+  .dish_container {
+    justify-content: space-between;
+  }
+  .dish_image {
+    width: 270px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 858px) {
+  .dish_image {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dish_image {
+    width: 210px;
+    height: 210px;
+  }
+}
+@media screen and (max-width: 618px) {
+  .main_container {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .logo img {
+    width: 110px;
+    height: 100px;
+  }
+  .profile_picture img {
+    width: 130px;
+    height: 130px;
+    top: 160px;
+  }
+  .kitchen_name {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .dish_image {
+    width: 100%;
+    height: 100%;
+  }
+  .dish_container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .kitchen_name {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .kitchen_location {
+    font-size: 1rem;
+  }
+  .kitchen_desc {
+    font-size: 1rem;
+  }
+}
