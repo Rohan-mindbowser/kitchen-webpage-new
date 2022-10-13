@@ -64,7 +64,8 @@
 .dish_image img {
   width: 100%;
   object-fit: cover;
-  /* max-height: 350px; */
+  object-position: bottom;
+  height: 350px;
 }
 @media screen and (max-width: 1024px) {
   .kitchen_content {
