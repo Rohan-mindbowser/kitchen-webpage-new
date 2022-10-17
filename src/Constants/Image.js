@@ -24,3 +24,5 @@ export const Dish5 =
 
 export const Dish6 =
   "https://d1q8x9j008krv1.cloudfront.net/posts/2937583722448291726/A472FA37-65ED-4C9A-AE74-8D37F3DC23C6.jpg";
+
+export const Dish7 = "https://d1q8x9j008krv1.cloudfront.net/posts/2880755871049057979/8E20BA97-997C-48DD-BB14-A2D187F3A237.jpg"

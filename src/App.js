@@ -1,12 +1,18 @@
 import "./App.css";
 import "./Style.css";
 // import { useState } from "react";
-import { Kitchen } from "./Components/Kitchen/Kitchen";
+import { Context } from "./Components/Contexthook/Context";
+import { createContext } from "react";
+
+export const AppContext = new createContext();
 
 function App() {
+  let name = "rohan kadam";
   return (
     <>
-      <Kitchen />
+      <AppContext.Provider value={{ name }}>
+        <Context />
+      </AppContext.Provider>
     </>
   );
 }

@@ -5,14 +5,29 @@ import {
   Dish4,
   Dish5,
   Dish6,
+  Dish7,
   FoxnForkLogo,
   KitchenHeader,
   ProfilePicture,
 } from "../../Constants/Image";
 import { Dish } from "../Dishes/Dish";
 import "./Kitchen.css";
+import { useQuery, gql } from "@apollo/client";
+
+const GET_LOCATIONS = gql`
+  query GetLocations {
+    locations {
+      id
+      name
+      description
+      photo
+    }
+  }
+`;
 
 export const Kitchen = () => {
+  const { loading, error, data } = useQuery(GET_LOCATIONS);
+  console.log("From Kitchen :", data);
   return (
     <>
       <div className="main_container">
@@ -55,7 +70,7 @@ export const Kitchen = () => {
             </div>
 
             <div className="dish_image">
-              <Dish image={Dish1} />
+              <Dish image={Dish7} />
             </div>
             <div className="dish_image">
               <Dish image={Dish2} />
